@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-19 19:58:39.837493",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tax",
+  "type",
+  "tax_rate",
+  "tax_name",
+  "column_break_lnuu",
+  "currency",
+  "tax_amount"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "tax",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tax",
+   "options": "Tax"
+  },
+  {
+   "fetch_from": "tax.type",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Percentage\nFixed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lnuu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "INR",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Tax Amount",
+   "options": "Currency:currency:symbol",
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "tax.value",
+   "fieldname": "tax_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tax Rate",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "tax.name1",
+   "fieldname": "tax_name",
+   "fieldtype": "Data",
+   "label": "Tax Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-20 12:50:10.899760",
+ "modified_by": "Administrator",
+ "module": "Invoice",
+ "name": "Invoice Taxes",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

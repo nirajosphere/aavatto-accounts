@@ -14,10 +14,10 @@ app_license = "mit"
 # add_to_apps_screen = [
 # 	{
 # 		"name": "avt_acc",
-# 		"logo": "/assets/avt_acc/logo.png",
-# 		"title": "Accounting",
+# 		"logo": "/assets/avt_acc/logo.svg",
+# 		"title": "Invoicing",
 # 		"route": "/avt_acc",
-# 		"has_permission": "avt_acc.api.permission.has_app_permission"
+# 		 "has_permission": "avt_acc.api.permission.has_app_permission"
 # 	}
 # ]
 
@@ -26,7 +26,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/avt_acc/css/avt_acc.css"
-# app_include_js = "/assets/avt_acc/js/avt_acc.js"
+app_include_js = ["/assets/avt_acc/js/invoice.js"]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/avt_acc/css/avt_acc.css"
@@ -249,4 +249,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-

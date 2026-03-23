@@ -1,0 +1,76 @@
+{
+ "app": "avt_acc",
+ "creation": "2026-03-20 20:35:35.026316",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "layout-dashboard",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Dashboard",
+   "link_to": "Invoicing",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "user",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Customer",
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "receipt-text",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Proforma Invoice",
+   "link_to": "Proforma Invoice",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "receipt-indian-rupee",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Tax Invoice",
+   "link_to": "Tax Invoice",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "indian-rupee",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Payments",
+   "link_to": "Invoice Payments",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-21 19:16:03.061251",
+ "modified_by": "Administrator",
+ "module": "Accounting",
+ "name": "Invoicing",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Invoicing"
+}

@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PAY-.#####",
+ "creation": "2026-03-21 13:38:37.354700",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tax_invoice",
+  "customer",
+  "currency",
+  "column_break_rzqn",
+  "payment_date",
+  "payment_time",
+  "bank_account",
+  "section_break_daqu",
+  "outstanding_amount",
+  "amount",
+  "column_break_ixks",
+  "conversion_rate",
+  "converted_amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "tax_invoice.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tax_invoice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tax Invoice",
+   "options": "Tax Invoice",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "tax_invoice.currency",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rzqn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Payment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_time",
+   "fieldtype": "Time",
+   "label": "Payment Time"
+  },
+  {
+   "fetch_from": "tax_invoice.bank_account_details",
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "section_break_daqu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "options": "Currency:currency:symbol",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ixks",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "conversion_rate",
+   "fieldtype": "Float",
+   "label": "Conversion Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "converted_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Converted Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Invoice Payments",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "tax_invoice.outstanding_amount",
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "label": "Outstanding Amount",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-23 10:46:47.153400",
+ "modified_by": "Administrator",
+ "module": "Invoice",
+ "name": "Invoice Payments",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
