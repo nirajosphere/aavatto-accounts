@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "GST/.invoice_year./.tax_invoice_series./.#####",
+ "autoname": "GST/.invoice_year./.tax_invoice_series./.###",
  "creation": "2026-03-20 14:54:49.707669",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -313,10 +313,9 @@
   {
    "default": "26-27",
    "fieldname": "invoice_year",
-   "fieldtype": "Data",
-   "hidden": 1,
+   "fieldtype": "Select",
    "label": "Invoice Year",
-   "read_only": 1,
+   "options": "25-26\n26-27\n27-28",
    "reqd": 1
   },
   {
@@ -403,7 +402,7 @@
    "link_fieldname": "tax_invoice"
   }
  ],
- "modified": "2026-03-23 11:36:02.041513",
+ "modified": "2026-03-24 12:01:07.027963",
  "modified_by": "Administrator",
  "module": "Invoice",
  "name": "Tax Invoice",
