@@ -6,6 +6,9 @@ from frappe.model.document import Document
 
 
 class TaxInvoice(Document):
+	def autoname(self):
+		self.name = f"GST/{self.invoice_year}/{self.tax_invoice_series}/{self.invoice_no}"
+
 	def update_proforma_invoice(self, action):
 		if not self.proforma_invoice:
 			return
