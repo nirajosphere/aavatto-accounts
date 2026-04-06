@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-receipt-rupee"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2" /><path d="M15 7h-6h1a3 3 0 0 1 0 6h-1l3 3" /><path d="M9 10h6" /></svg>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="500" height="500" fill="url(#paint0_linear_320_30)"/>
+<g clip-path="url(#clip0_320_30)">
+<path d="M168.918 354.25V168.917C168.918 162.772 171.359 156.88 175.703 152.535C180.048 148.191 185.94 145.75 192.085 145.75H307.918C314.062 145.75 319.955 148.191 324.299 152.535C328.644 156.88 331.085 162.772 331.085 168.917V354.25L296.335 331.083L273.168 354.25L250.001 331.083L226.835 354.25L203.668 331.083L168.918 354.25Z" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M284.75 192.084H215.25H226.833C236.05 192.084 244.888 195.745 251.405 202.262C257.922 208.779 261.583 217.618 261.583 226.834C261.583 236.05 257.922 244.889 251.405 251.406C244.888 257.923 236.05 261.584 226.833 261.584H215.25L250 296.334" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215.25 226.834H284.75" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_320_30" x1="5.23105e-06" y1="27.5" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF777A"/>
+<stop offset="1" stop-color="#B40060"/>
+</linearGradient>
+<clipPath id="clip0_320_30">
+<rect width="278" height="278" fill="white" transform="translate(111 111)"/>
+</clipPath>
+</defs>
+</svg>

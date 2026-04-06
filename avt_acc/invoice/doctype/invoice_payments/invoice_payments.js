@@ -37,12 +37,17 @@ frappe.ui.form.on("Invoice Payments", {
 	tax_invoice: function (frm) {
 		if (!frm.doc.tax_invoice) return;
 
-		frappe.db.get_value("Tax Invoice", frm.doc.tax_invoice, "docstatus").then((r) => {
-			if (r.message.docstatus !== 1) {
-				frappe.msgprint("You can only create payment against a submitted Tax Invoice");
-				frm.set_value("tax_invoice", "");
-			}
-		});
+		frappe.db
+			.get_value("Tax Invoice", frm.doc.tax_invoice, ["docstatus", "bank_account_details"])
+			.then((r) => {
+				if (r.message.docstatus !== 1) {
+					frappe.msgprint("You can only create payment against a submitted Tax Invoice");
+					frm.set_value("tax_invoice", "");
+				}
+				if (r.message.bank_account_details) {
+					frm.set_value("bank_account", r.message.bank_account_details);
+				}
+			});
 	},
 });
 
