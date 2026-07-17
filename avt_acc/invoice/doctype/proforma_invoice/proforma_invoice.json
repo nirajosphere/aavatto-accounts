@@ -8,6 +8,7 @@
  "field_order": [
   "general_information_section",
   "customer",
+  "po_number",
   "column_break_piac",
   "invoice_date",
   "due_date",
@@ -320,6 +321,11 @@
    "fieldtype": "Select",
    "label": "Tax Invoice Status",
    "options": "Pending\nConverted"
+  },
+  {
+   "fieldname": "po_number",
+   "fieldtype": "Data",
+   "label": "P.O. Number"
   }
  ],
  "grid_page_length": 50,
@@ -330,7 +336,7 @@
    "link_fieldname": "proforma_invoice"
   }
  ],
- "modified": "2026-03-23 11:39:24.866971",
+ "modified": "2026-07-17 11:54:01.065239",
  "modified_by": "Administrator",
  "module": "Invoice",
  "name": "Proforma Invoice",

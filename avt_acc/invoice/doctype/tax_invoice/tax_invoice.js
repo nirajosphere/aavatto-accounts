@@ -49,6 +49,7 @@ function get_proforma_and_autofill(frm) {
 			frm.set_value("taxable_amount", source.taxable_amount);
 			frm.set_value("tax", source.tax);
 			frm.set_value("total", source.total);
+			frm.set_value("po_number", source.po_number);
 		},
 	});
 }
@@ -94,6 +95,10 @@ frappe.ui.form.on("Invoice Particulars", {
 	refresh(frm) {},
 	unit_cost: avt_acc.invoice.calculate_line_total,
 	quantity: avt_acc.invoice.calculate_line_total,
+	line_total: (frm) => {
+		avt_acc.invoice.calculate_subtotal(frm);
+		avt_acc.invoice.calculate_taxes(frm);
+	},
 	//  Update currency on add or remove of the child item in Proforma Invoice
 	table_yevf_add: (frm) => {
 		avt_acc.invoice.set_currency(frm);

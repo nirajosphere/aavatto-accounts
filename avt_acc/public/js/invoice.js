@@ -7,6 +7,9 @@ window.avt_acc.invoice.calculate_line_total = (frm, cdt, cdn) => {
 		frappe.model.set_value(cdt, cdn, "line_total", row.unit_cost * row.quantity);
 	}
 	window.avt_acc.invoice.calculate_subtotal(frm);
+	window.avt_acc.invoice.calculate_taxable_amount(frm);
+	window.avt_acc.invoice.calculate_taxes(frm);
+	window.avt_acc.invoice.calculate_total(frm);
 };
 window.avt_acc.invoice.set_currency = (frm) => {
 	let currency = frm.doc.currency;
